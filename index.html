@@ -10,7 +10,16 @@
 is implimented. I looked up each method as I went along. 1st sticking point was getting JS to render,
 but, it'd been a while.-->
 
+<!-- features still to add; 
+	score
+	score max
+	"you win"
+	score reset
+	sound
+	-->
+
 	<style>
+	h2 { text-align: center; margin-top: 6rem; }
 	canvas {
 		position: absolute;
 		margin: auto;
@@ -22,12 +31,12 @@ but, it'd been a while.-->
 	</style>
 </head>
 <body>
-<h2>PONG in JS</h2>
+<h2>PONG in JavaScript</h2>
 
 <script>
 
 
-	var WIDTH =700, HEIGHT=600, pi=Math.PI; 
+	var WIDTH =800, HEIGHT=600, pi=Math.PI; 
 	var UpArrow = 38, DownArrow=40; 
 	var canvas, ctx, keystate;
 	var player, ai, ball;
